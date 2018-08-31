@@ -1,0 +1,42 @@
+﻿@model PalWeb.Models.LoginViewModel
+
+
+@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PalRepository | Login</title>
+</head>
+
+<body >
+
+	<div >
+		<div>
+			<p>Please Login</p>
+			@using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+			{
+				@Html.AntiForgeryToken()
+				<div >
+					@Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "email" })
+					@Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+				</div>
+				<div >
+					@Html.PasswordFor(m => m.Password, new { @class = "form-control", placeholder = "password" })
+					@Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+				</div>
+				<button type="submit" class="btn btn-primary">Login</button>
+
+				@Html.ActionLink("Forget your password?", "ForgotPassword")
+			}
+			
+		</div>
+	</div>
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,10 @@
+Before start work with this demo Execute "CreateDatabase.sql" file in sql to create the database and basic table's for this demo.
+
+and his defalt login is:
+
+userId=admin@admin.com
+password=Palsoft#143
+
+
+Thanks,
+Sagar

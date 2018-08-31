@@ -1,0 +1,1055 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Pal.Entity.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Pal.Entities.Models.Fakes.ShimAuditLog">
+            <summary>Shim type of Pal.Entities.Models.AuditLog</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.ShimAuditLog.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.ShimAuditLog.#ctor(Pal.Entities.Models.AuditLog)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Pal.Entities.Models.Fakes.ShimAuditLog.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.AllInstances.AuditLogIDGet">
+            <summary>Sets the shim of AuditLog.get_AuditLogID()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.AllInstances.AuditLogIDSetGuid">
+            <summary>Sets the shim of AuditLog.set_AuditLogID(Guid value)</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.AllInstances.columnnameGet">
+            <summary>Sets the shim of AuditLog.get_columnname()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.AllInstances.columnnameSetString">
+            <summary>Sets the shim of AuditLog.set_columnname(String value)</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.AllInstances.eventdateutcGet">
+            <summary>Sets the shim of AuditLog.get_eventdateutc()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.AllInstances.eventdateutcSetDateTime">
+            <summary>Sets the shim of AuditLog.set_eventdateutc(DateTime value)</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.AllInstances.eventtypeGet">
+            <summary>Sets the shim of AuditLog.get_eventtype()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.AllInstances.eventtypeSetString">
+            <summary>Sets the shim of AuditLog.set_eventtype(String value)</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.AllInstances.newvalueGet">
+            <summary>Sets the shim of AuditLog.get_newvalue()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.AllInstances.newvalueSetString">
+            <summary>Sets the shim of AuditLog.set_newvalue(String value)</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.AllInstances.originalvalueGet">
+            <summary>Sets the shim of AuditLog.get_originalvalue()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.AllInstances.originalvalueSetString">
+            <summary>Sets the shim of AuditLog.set_originalvalue(String value)</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.AllInstances.recordidGet">
+            <summary>Sets the shim of AuditLog.get_recordid()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.AllInstances.recordidSetString">
+            <summary>Sets the shim of AuditLog.set_recordid(String value)</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.AllInstances.tablenameGet">
+            <summary>Sets the shim of AuditLog.get_tablename()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.AllInstances.tablenameSetString">
+            <summary>Sets the shim of AuditLog.set_tablename(String value)</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.AllInstances.useridGet">
+            <summary>Sets the shim of AuditLog.get_userid()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.AllInstances.useridSetString">
+            <summary>Sets the shim of AuditLog.set_userid(String value)</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.AuditLogIDGet">
+            <summary>Sets the shim of AuditLog.get_AuditLogID()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.AuditLogIDSetGuid">
+            <summary>Sets the shim of AuditLog.set_AuditLogID(Guid value)</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.ShimAuditLog.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.ShimAuditLog.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.ShimAuditLog.Bind(Repository.Pattern.Infrastructure.IObjectState)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.Constructor">
+            <summary>Sets the shim of AuditLog.AuditLog()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.columnnameGet">
+            <summary>Sets the shim of AuditLog.get_columnname()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.columnnameSetString">
+            <summary>Sets the shim of AuditLog.set_columnname(String value)</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.eventdateutcGet">
+            <summary>Sets the shim of AuditLog.get_eventdateutc()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.eventdateutcSetDateTime">
+            <summary>Sets the shim of AuditLog.set_eventdateutc(DateTime value)</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.eventtypeGet">
+            <summary>Sets the shim of AuditLog.get_eventtype()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.eventtypeSetString">
+            <summary>Sets the shim of AuditLog.set_eventtype(String value)</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.newvalueGet">
+            <summary>Sets the shim of AuditLog.get_newvalue()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.newvalueSetString">
+            <summary>Sets the shim of AuditLog.set_newvalue(String value)</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.originalvalueGet">
+            <summary>Sets the shim of AuditLog.get_originalvalue()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.originalvalueSetString">
+            <summary>Sets the shim of AuditLog.set_originalvalue(String value)</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.recordidGet">
+            <summary>Sets the shim of AuditLog.get_recordid()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.recordidSetString">
+            <summary>Sets the shim of AuditLog.set_recordid(String value)</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.tablenameGet">
+            <summary>Sets the shim of AuditLog.get_tablename()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.tablenameSetString">
+            <summary>Sets the shim of AuditLog.set_tablename(String value)</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.useridGet">
+            <summary>Sets the shim of AuditLog.get_userid()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimAuditLog.useridSetString">
+            <summary>Sets the shim of AuditLog.set_userid(String value)</summary>
+        </member>
+        <member name="T:Pal.Entities.Models.Fakes.ShimPalContext">
+            <summary>Shim type of Pal.Entities.Models.PalContext</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.ShimPalContext.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.ShimPalContext.#ctor(Pal.Entities.Models.PalContext)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Pal.Entities.Models.Fakes.ShimPalContext.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimPalContext.AllInstances.GetAuditRecordsForChangeDbEntityEntryString">
+            <summary>Sets the shim of PalContext.GetAuditRecordsForChange(DbEntityEntry dbEntry, String userId)</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimPalContext.AllInstances.OnModelCreatingDbModelBuilder">
+            <summary>Sets the shim of PalContext.OnModelCreating(DbModelBuilder modelBuilder)</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimPalContext.AllInstances.SaveChangesString">
+            <summary>Sets the shim of PalContext.SaveChanges(String userid)</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimPalContext.AllInstances.tmpRegisterGet">
+            <summary>Sets the shim of PalContext.get_tmpRegister()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimPalContext.AllInstances.tmpRegisterSetDbSetOfRegister">
+            <summary>Sets the shim of PalContext.set_tmpRegister(DbSet`1&lt;Register&gt; value)</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.ShimPalContext.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.ShimPalContext.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimPalContext.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.ShimPalContext.Bind(System.Data.Entity.Infrastructure.IObjectContextAdapter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.ShimPalContext.Bind(Repository.Pattern.DataContext.IDataContext)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.ShimPalContext.Bind(Repository.Pattern.DataContext.IDataContextAsync)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.ShimPalContext.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimPalContext.Constructor">
+            <summary>Sets the shim of PalContext.PalContext()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimPalContext.GetAuditRecordsForChangeDbEntityEntryString">
+            <summary>Sets the shim of PalContext.GetAuditRecordsForChange(DbEntityEntry dbEntry, String userId)</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimPalContext.OnModelCreatingDbModelBuilder">
+            <summary>Sets the shim of PalContext.OnModelCreating(DbModelBuilder modelBuilder)</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimPalContext.SaveChangesString">
+            <summary>Sets the shim of PalContext.SaveChanges(String userid)</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimPalContext.StaticConstructor">
+            <summary>Sets the shim of PalContext.PalContext()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimPalContext.tmpRegisterGet">
+            <summary>Sets the shim of PalContext.get_tmpRegister()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimPalContext.tmpRegisterSetDbSetOfRegister">
+            <summary>Sets the shim of PalContext.set_tmpRegister(DbSet`1&lt;Register&gt; value)</summary>
+        </member>
+        <member name="T:Pal.Entities.Models.Fakes.ShimRegister">
+            <summary>Shim type of Pal.Entities.Models.Register</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.ShimRegister.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.ShimRegister.#ctor(Pal.Entities.Models.Register)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.AccessCodeGet">
+            <summary>Sets the shim of Register.get_AccessCode()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.AccessCodeSetInt32">
+            <summary>Sets the shim of Register.set_AccessCode(Int32 value)</summary>
+        </member>
+        <member name="T:Pal.Entities.Models.Fakes.ShimRegister.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.AllInstances.AccessCodeGet">
+            <summary>Sets the shim of Register.get_AccessCode()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.AllInstances.AccessCodeSetInt32">
+            <summary>Sets the shim of Register.set_AccessCode(Int32 value)</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.AllInstances.ConfirmPasswordGet">
+            <summary>Sets the shim of Register.get_ConfirmPassword()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.AllInstances.ConfirmPasswordSetString">
+            <summary>Sets the shim of Register.set_ConfirmPassword(String value)</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.AllInstances.CreatedDateGet">
+            <summary>Sets the shim of Register.get_CreatedDate()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.AllInstances.CreatedDateSetNullableOfDateTime">
+            <summary>Sets the shim of Register.set_CreatedDate(Nullable`1&lt;DateTime&gt; value)</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.AllInstances.FnameGet">
+            <summary>Sets the shim of Register.get_Fname()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.AllInstances.FnameSetString">
+            <summary>Sets the shim of Register.set_Fname(String value)</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.AllInstances.IdGet">
+            <summary>Sets the shim of Register.get_Id()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.AllInstances.IdSetInt32">
+            <summary>Sets the shim of Register.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.AllInstances.LnameGet">
+            <summary>Sets the shim of Register.get_Lname()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.AllInstances.LnameSetString">
+            <summary>Sets the shim of Register.set_Lname(String value)</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.AllInstances.ModifydateGet">
+            <summary>Sets the shim of Register.get_Modifydate()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.AllInstances.ModifydateSetNullableOfDateTime">
+            <summary>Sets the shim of Register.set_Modifydate(Nullable`1&lt;DateTime&gt; value)</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.AllInstances.PasswordGet">
+            <summary>Sets the shim of Register.get_Password()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.AllInstances.PasswordSetString">
+            <summary>Sets the shim of Register.set_Password(String value)</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.AllInstances.UserNameGet">
+            <summary>Sets the shim of Register.get_UserName()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.AllInstances.UserNameSetString">
+            <summary>Sets the shim of Register.set_UserName(String value)</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.ShimRegister.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.ShimRegister.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.ShimRegister.Bind(Repository.Pattern.Infrastructure.IObjectState)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.ConfirmPasswordGet">
+            <summary>Sets the shim of Register.get_ConfirmPassword()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.ConfirmPasswordSetString">
+            <summary>Sets the shim of Register.set_ConfirmPassword(String value)</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.Constructor">
+            <summary>Sets the shim of Register.Register()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.CreatedDateGet">
+            <summary>Sets the shim of Register.get_CreatedDate()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.CreatedDateSetNullableOfDateTime">
+            <summary>Sets the shim of Register.set_CreatedDate(Nullable`1&lt;DateTime&gt; value)</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.FnameGet">
+            <summary>Sets the shim of Register.get_Fname()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.FnameSetString">
+            <summary>Sets the shim of Register.set_Fname(String value)</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.IdGet">
+            <summary>Sets the shim of Register.get_Id()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.IdSetInt32">
+            <summary>Sets the shim of Register.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.LnameGet">
+            <summary>Sets the shim of Register.get_Lname()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.LnameSetString">
+            <summary>Sets the shim of Register.set_Lname(String value)</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.ModifydateGet">
+            <summary>Sets the shim of Register.get_Modifydate()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.ModifydateSetNullableOfDateTime">
+            <summary>Sets the shim of Register.set_Modifydate(Nullable`1&lt;DateTime&gt; value)</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.PasswordGet">
+            <summary>Sets the shim of Register.get_Password()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.PasswordSetString">
+            <summary>Sets the shim of Register.set_Password(String value)</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.UserNameGet">
+            <summary>Sets the shim of Register.get_UserName()</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.ShimRegister.UserNameSetString">
+            <summary>Sets the shim of Register.set_UserName(String value)</summary>
+        </member>
+        <member name="T:Pal.Entities.Models.Fakes.StubAuditLog">
+            <summary>Stub type of Pal.Entities.Models.AuditLog</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.StubAuditLog.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.StubAuditLog.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.StubAuditLog.InitializeStub">
+            <summary>Initializes a new instance of type StubAuditLog</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.StubAuditLog.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.StubAuditLog.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Pal.Entities.Models.Fakes.StubPalContext">
+            <summary>Stub type of Pal.Entities.Models.PalContext</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.StubPalContext.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.StubPalContext.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.StubPalContext.Dispose(System.Boolean)">
+            <summary>Sets the stub of DataContext.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="F:Pal.Entities.Models.Fakes.StubPalContext.DisposeBoolean">
+            <summary>Sets the stub of DataContext.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.StubPalContext.Equals(System.Object)">
+            <summary>Sets the stub of DbContext.Equals(Object obj)</summary>
+        </member>
+        <member name="F:Pal.Entities.Models.Fakes.StubPalContext.EqualsObject">
+            <summary>Sets the stub of DbContext.Equals(Object obj)</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.StubPalContext.GetHashCode">
+            <summary>Sets the stub of DbContext.GetHashCode()</summary>
+        </member>
+        <member name="F:Pal.Entities.Models.Fakes.StubPalContext.GetHashCode01">
+            <summary>Sets the stub of DbContext.GetHashCode()</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.StubPalContext.InitializeStub">
+            <summary>Initializes a new instance of type StubPalContext</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.StubPalContext.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.StubPalContext.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.StubPalContext.OnModelCreating(System.Data.Entity.DbModelBuilder)">
+            <summary>Sets the stub of PalContext.OnModelCreating(DbModelBuilder modelBuilder)</summary>
+        </member>
+        <member name="F:Pal.Entities.Models.Fakes.StubPalContext.OnModelCreatingDbModelBuilder">
+            <summary>Sets the stub of PalContext.OnModelCreating(DbModelBuilder modelBuilder)</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.StubPalContext.SaveChanges">
+            <summary>Sets the stub of DataContext.SaveChanges()</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.StubPalContext.SaveChanges(System.String)">
+            <summary>Sets the stub of PalContext.SaveChanges(String userid)</summary>
+        </member>
+        <member name="F:Pal.Entities.Models.Fakes.StubPalContext.SaveChanges01">
+            <summary>Sets the stub of DataContext.SaveChanges()</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.StubPalContext.SaveChangesAsync">
+            <summary>Sets the stub of DataContext.SaveChangesAsync()</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.StubPalContext.SaveChangesAsync(System.Threading.CancellationToken)">
+            <summary>Sets the stub of DataContext.SaveChangesAsync(CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:Pal.Entities.Models.Fakes.StubPalContext.SaveChangesAsync01">
+            <summary>Sets the stub of DataContext.SaveChangesAsync()</summary>
+        </member>
+        <member name="F:Pal.Entities.Models.Fakes.StubPalContext.SaveChangesAsyncCancellationToken">
+            <summary>Sets the stub of DataContext.SaveChangesAsync(CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:Pal.Entities.Models.Fakes.StubPalContext.SaveChangesString">
+            <summary>Sets the stub of PalContext.SaveChanges(String userid)</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.StubPalContext.Set(System.Type)">
+            <summary>Sets the stub of DbContext.Set(Type entityType)</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.StubPalContext.Set``1">
+            <summary>Sets the stub of DbContext.Set()</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.StubPalContext.SetOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Data.Entity.DbSet{``0}})">
+            <summary>Sets stubs of Set()</summary>
+        </member>
+        <member name="F:Pal.Entities.Models.Fakes.StubPalContext.SetType">
+            <summary>Sets the stub of DbContext.Set(Type entityType)</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.StubPalContext.ShouldValidateEntity(System.Data.Entity.Infrastructure.DbEntityEntry)">
+            <summary>Sets the stub of DbContext.ShouldValidateEntity(DbEntityEntry entityEntry)</summary>
+        </member>
+        <member name="F:Pal.Entities.Models.Fakes.StubPalContext.ShouldValidateEntityDbEntityEntry">
+            <summary>Sets the stub of DbContext.ShouldValidateEntity(DbEntityEntry entityEntry)</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.StubPalContext.ToString">
+            <summary>Sets the stub of DbContext.ToString()</summary>
+        </member>
+        <member name="F:Pal.Entities.Models.Fakes.StubPalContext.ToString01">
+            <summary>Sets the stub of DbContext.ToString()</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.StubPalContext.ValidateEntity(System.Data.Entity.Infrastructure.DbEntityEntry,System.Collections.Generic.IDictionary{System.Object,System.Object})">
+            <summary>Sets the stub of DbContext.ValidateEntity(DbEntityEntry entityEntry, IDictionary`2&lt;Object,Object&gt; items)</summary>
+        </member>
+        <member name="F:Pal.Entities.Models.Fakes.StubPalContext.ValidateEntityDbEntityEntryIDictionaryOfObjectObject">
+            <summary>Sets the stub of DbContext.ValidateEntity(DbEntityEntry entityEntry, IDictionary`2&lt;Object,Object&gt; items)</summary>
+        </member>
+        <member name="T:Pal.Entities.Models.Fakes.StubRegister">
+            <summary>Stub type of Pal.Entities.Models.Register</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.StubRegister.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.StubRegister.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Pal.Entities.Models.Fakes.StubRegister.InitializeStub">
+            <summary>Initializes a new instance of type StubRegister</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.StubRegister.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Pal.Entities.Models.Fakes.StubRegister.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Pal.Entity.Models.Fakes.ShimAspNetRole">
+            <summary>Shim type of Pal.Entity.Models.AspNetRole</summary>
+        </member>
+        <member name="M:Pal.Entity.Models.Fakes.ShimAspNetRole.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Pal.Entity.Models.Fakes.ShimAspNetRole.#ctor(Pal.Entity.Models.AspNetRole)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Pal.Entity.Models.Fakes.ShimAspNetRole.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetRole.AllInstances.AspNetUsersGet">
+            <summary>Sets the shim of AspNetRole.get_AspNetUsers()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetRole.AllInstances.AspNetUsersSetICollectionOfAspNetUser">
+            <summary>Sets the shim of AspNetRole.set_AspNetUsers(ICollection`1&lt;AspNetUser&gt; value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetRole.AllInstances.IdGet">
+            <summary>Sets the shim of AspNetRole.get_Id()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetRole.AllInstances.IdSetString">
+            <summary>Sets the shim of AspNetRole.set_Id(String value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetRole.AllInstances.NameGet">
+            <summary>Sets the shim of AspNetRole.get_Name()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetRole.AllInstances.NameSetString">
+            <summary>Sets the shim of AspNetRole.set_Name(String value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetRole.AspNetUsersGet">
+            <summary>Sets the shim of AspNetRole.get_AspNetUsers()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetRole.AspNetUsersSetICollectionOfAspNetUser">
+            <summary>Sets the shim of AspNetRole.set_AspNetUsers(ICollection`1&lt;AspNetUser&gt; value)</summary>
+        </member>
+        <member name="M:Pal.Entity.Models.Fakes.ShimAspNetRole.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Pal.Entity.Models.Fakes.ShimAspNetRole.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetRole.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetRole.Constructor">
+            <summary>Sets the shim of AspNetRole.AspNetRole()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetRole.IdGet">
+            <summary>Sets the shim of AspNetRole.get_Id()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetRole.IdSetString">
+            <summary>Sets the shim of AspNetRole.set_Id(String value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetRole.NameGet">
+            <summary>Sets the shim of AspNetRole.get_Name()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetRole.NameSetString">
+            <summary>Sets the shim of AspNetRole.set_Name(String value)</summary>
+        </member>
+        <member name="T:Pal.Entity.Models.Fakes.ShimAspNetUser">
+            <summary>Shim type of Pal.Entity.Models.AspNetUser</summary>
+        </member>
+        <member name="M:Pal.Entity.Models.Fakes.ShimAspNetUser.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Pal.Entity.Models.Fakes.ShimAspNetUser.#ctor(Pal.Entity.Models.AspNetUser)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AccessFailedCountGet">
+            <summary>Sets the shim of AspNetUser.get_AccessFailedCount()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AccessFailedCountSetInt32">
+            <summary>Sets the shim of AspNetUser.set_AccessFailedCount(Int32 value)</summary>
+        </member>
+        <member name="T:Pal.Entity.Models.Fakes.ShimAspNetUser.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AllInstances.AccessFailedCountGet">
+            <summary>Sets the shim of AspNetUser.get_AccessFailedCount()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AllInstances.AccessFailedCountSetInt32">
+            <summary>Sets the shim of AspNetUser.set_AccessFailedCount(Int32 value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AllInstances.AspNetRolesGet">
+            <summary>Sets the shim of AspNetUser.get_AspNetRoles()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AllInstances.AspNetRolesSetICollectionOfAspNetRole">
+            <summary>Sets the shim of AspNetUser.set_AspNetRoles(ICollection`1&lt;AspNetRole&gt; value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AllInstances.AspNetUserClaimsGet">
+            <summary>Sets the shim of AspNetUser.get_AspNetUserClaims()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AllInstances.AspNetUserClaimsSetICollectionOfAspNetUserClaim">
+            <summary>Sets the shim of AspNetUser.set_AspNetUserClaims(ICollection`1&lt;AspNetUserClaim&gt; value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AllInstances.AspNetUserLoginsGet">
+            <summary>Sets the shim of AspNetUser.get_AspNetUserLogins()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AllInstances.AspNetUserLoginsSetICollectionOfAspNetUserLogin">
+            <summary>Sets the shim of AspNetUser.set_AspNetUserLogins(ICollection`1&lt;AspNetUserLogin&gt; value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AllInstances.CarehomeIdGet">
+            <summary>Sets the shim of AspNetUser.get_CarehomeId()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AllInstances.CarehomeIdSetNullableOfInt32">
+            <summary>Sets the shim of AspNetUser.set_CarehomeId(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AllInstances.EmailConfirmedGet">
+            <summary>Sets the shim of AspNetUser.get_EmailConfirmed()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AllInstances.EmailConfirmedSetBoolean">
+            <summary>Sets the shim of AspNetUser.set_EmailConfirmed(Boolean value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AllInstances.EmailGet">
+            <summary>Sets the shim of AspNetUser.get_Email()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AllInstances.EmailSetString">
+            <summary>Sets the shim of AspNetUser.set_Email(String value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AllInstances.IdGet">
+            <summary>Sets the shim of AspNetUser.get_Id()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AllInstances.IdSetString">
+            <summary>Sets the shim of AspNetUser.set_Id(String value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AllInstances.LockoutEnabledGet">
+            <summary>Sets the shim of AspNetUser.get_LockoutEnabled()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AllInstances.LockoutEnabledSetBoolean">
+            <summary>Sets the shim of AspNetUser.set_LockoutEnabled(Boolean value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AllInstances.LockoutEndDateUtcGet">
+            <summary>Sets the shim of AspNetUser.get_LockoutEndDateUtc()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AllInstances.LockoutEndDateUtcSetNullableOfDateTime">
+            <summary>Sets the shim of AspNetUser.set_LockoutEndDateUtc(Nullable`1&lt;DateTime&gt; value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AllInstances.PasswordHashGet">
+            <summary>Sets the shim of AspNetUser.get_PasswordHash()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AllInstances.PasswordHashSetString">
+            <summary>Sets the shim of AspNetUser.set_PasswordHash(String value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AllInstances.PhoneNumberConfirmedGet">
+            <summary>Sets the shim of AspNetUser.get_PhoneNumberConfirmed()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AllInstances.PhoneNumberConfirmedSetBoolean">
+            <summary>Sets the shim of AspNetUser.set_PhoneNumberConfirmed(Boolean value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AllInstances.PhoneNumberGet">
+            <summary>Sets the shim of AspNetUser.get_PhoneNumber()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AllInstances.PhoneNumberSetString">
+            <summary>Sets the shim of AspNetUser.set_PhoneNumber(String value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AllInstances.SecurityStampGet">
+            <summary>Sets the shim of AspNetUser.get_SecurityStamp()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AllInstances.SecurityStampSetString">
+            <summary>Sets the shim of AspNetUser.set_SecurityStamp(String value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AllInstances.TwoFactorEnabledGet">
+            <summary>Sets the shim of AspNetUser.get_TwoFactorEnabled()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AllInstances.TwoFactorEnabledSetBoolean">
+            <summary>Sets the shim of AspNetUser.set_TwoFactorEnabled(Boolean value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AllInstances.UserNameGet">
+            <summary>Sets the shim of AspNetUser.get_UserName()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AllInstances.UserNameSetString">
+            <summary>Sets the shim of AspNetUser.set_UserName(String value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AspNetRolesGet">
+            <summary>Sets the shim of AspNetUser.get_AspNetRoles()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AspNetRolesSetICollectionOfAspNetRole">
+            <summary>Sets the shim of AspNetUser.set_AspNetRoles(ICollection`1&lt;AspNetRole&gt; value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AspNetUserClaimsGet">
+            <summary>Sets the shim of AspNetUser.get_AspNetUserClaims()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AspNetUserClaimsSetICollectionOfAspNetUserClaim">
+            <summary>Sets the shim of AspNetUser.set_AspNetUserClaims(ICollection`1&lt;AspNetUserClaim&gt; value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AspNetUserLoginsGet">
+            <summary>Sets the shim of AspNetUser.get_AspNetUserLogins()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.AspNetUserLoginsSetICollectionOfAspNetUserLogin">
+            <summary>Sets the shim of AspNetUser.set_AspNetUserLogins(ICollection`1&lt;AspNetUserLogin&gt; value)</summary>
+        </member>
+        <member name="M:Pal.Entity.Models.Fakes.ShimAspNetUser.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Pal.Entity.Models.Fakes.ShimAspNetUser.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.CarehomeIdGet">
+            <summary>Sets the shim of AspNetUser.get_CarehomeId()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.CarehomeIdSetNullableOfInt32">
+            <summary>Sets the shim of AspNetUser.set_CarehomeId(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.Constructor">
+            <summary>Sets the shim of AspNetUser.AspNetUser()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.EmailConfirmedGet">
+            <summary>Sets the shim of AspNetUser.get_EmailConfirmed()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.EmailConfirmedSetBoolean">
+            <summary>Sets the shim of AspNetUser.set_EmailConfirmed(Boolean value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.EmailGet">
+            <summary>Sets the shim of AspNetUser.get_Email()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.EmailSetString">
+            <summary>Sets the shim of AspNetUser.set_Email(String value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.IdGet">
+            <summary>Sets the shim of AspNetUser.get_Id()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.IdSetString">
+            <summary>Sets the shim of AspNetUser.set_Id(String value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.LockoutEnabledGet">
+            <summary>Sets the shim of AspNetUser.get_LockoutEnabled()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.LockoutEnabledSetBoolean">
+            <summary>Sets the shim of AspNetUser.set_LockoutEnabled(Boolean value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.LockoutEndDateUtcGet">
+            <summary>Sets the shim of AspNetUser.get_LockoutEndDateUtc()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.LockoutEndDateUtcSetNullableOfDateTime">
+            <summary>Sets the shim of AspNetUser.set_LockoutEndDateUtc(Nullable`1&lt;DateTime&gt; value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.PasswordHashGet">
+            <summary>Sets the shim of AspNetUser.get_PasswordHash()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.PasswordHashSetString">
+            <summary>Sets the shim of AspNetUser.set_PasswordHash(String value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.PhoneNumberConfirmedGet">
+            <summary>Sets the shim of AspNetUser.get_PhoneNumberConfirmed()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.PhoneNumberConfirmedSetBoolean">
+            <summary>Sets the shim of AspNetUser.set_PhoneNumberConfirmed(Boolean value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.PhoneNumberGet">
+            <summary>Sets the shim of AspNetUser.get_PhoneNumber()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.PhoneNumberSetString">
+            <summary>Sets the shim of AspNetUser.set_PhoneNumber(String value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.SecurityStampGet">
+            <summary>Sets the shim of AspNetUser.get_SecurityStamp()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.SecurityStampSetString">
+            <summary>Sets the shim of AspNetUser.set_SecurityStamp(String value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.TwoFactorEnabledGet">
+            <summary>Sets the shim of AspNetUser.get_TwoFactorEnabled()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.TwoFactorEnabledSetBoolean">
+            <summary>Sets the shim of AspNetUser.set_TwoFactorEnabled(Boolean value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.UserNameGet">
+            <summary>Sets the shim of AspNetUser.get_UserName()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUser.UserNameSetString">
+            <summary>Sets the shim of AspNetUser.set_UserName(String value)</summary>
+        </member>
+        <member name="T:Pal.Entity.Models.Fakes.ShimAspNetUserClaim">
+            <summary>Shim type of Pal.Entity.Models.AspNetUserClaim</summary>
+        </member>
+        <member name="M:Pal.Entity.Models.Fakes.ShimAspNetUserClaim.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Pal.Entity.Models.Fakes.ShimAspNetUserClaim.#ctor(Pal.Entity.Models.AspNetUserClaim)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Pal.Entity.Models.Fakes.ShimAspNetUserClaim.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserClaim.AllInstances.AspNetUserGet">
+            <summary>Sets the shim of AspNetUserClaim.get_AspNetUser()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserClaim.AllInstances.AspNetUserSetAspNetUser">
+            <summary>Sets the shim of AspNetUserClaim.set_AspNetUser(AspNetUser value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserClaim.AllInstances.ClaimTypeGet">
+            <summary>Sets the shim of AspNetUserClaim.get_ClaimType()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserClaim.AllInstances.ClaimTypeSetString">
+            <summary>Sets the shim of AspNetUserClaim.set_ClaimType(String value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserClaim.AllInstances.ClaimValueGet">
+            <summary>Sets the shim of AspNetUserClaim.get_ClaimValue()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserClaim.AllInstances.ClaimValueSetString">
+            <summary>Sets the shim of AspNetUserClaim.set_ClaimValue(String value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserClaim.AllInstances.IdGet">
+            <summary>Sets the shim of AspNetUserClaim.get_Id()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserClaim.AllInstances.IdSetInt32">
+            <summary>Sets the shim of AspNetUserClaim.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserClaim.AllInstances.UserIdGet">
+            <summary>Sets the shim of AspNetUserClaim.get_UserId()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserClaim.AllInstances.UserIdSetString">
+            <summary>Sets the shim of AspNetUserClaim.set_UserId(String value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserClaim.AspNetUserGet">
+            <summary>Sets the shim of AspNetUserClaim.get_AspNetUser()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserClaim.AspNetUserSetAspNetUser">
+            <summary>Sets the shim of AspNetUserClaim.set_AspNetUser(AspNetUser value)</summary>
+        </member>
+        <member name="M:Pal.Entity.Models.Fakes.ShimAspNetUserClaim.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Pal.Entity.Models.Fakes.ShimAspNetUserClaim.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserClaim.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserClaim.ClaimTypeGet">
+            <summary>Sets the shim of AspNetUserClaim.get_ClaimType()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserClaim.ClaimTypeSetString">
+            <summary>Sets the shim of AspNetUserClaim.set_ClaimType(String value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserClaim.ClaimValueGet">
+            <summary>Sets the shim of AspNetUserClaim.get_ClaimValue()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserClaim.ClaimValueSetString">
+            <summary>Sets the shim of AspNetUserClaim.set_ClaimValue(String value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserClaim.Constructor">
+            <summary>Sets the shim of AspNetUserClaim.AspNetUserClaim()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserClaim.IdGet">
+            <summary>Sets the shim of AspNetUserClaim.get_Id()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserClaim.IdSetInt32">
+            <summary>Sets the shim of AspNetUserClaim.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserClaim.UserIdGet">
+            <summary>Sets the shim of AspNetUserClaim.get_UserId()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserClaim.UserIdSetString">
+            <summary>Sets the shim of AspNetUserClaim.set_UserId(String value)</summary>
+        </member>
+        <member name="T:Pal.Entity.Models.Fakes.ShimAspNetUserLogin">
+            <summary>Shim type of Pal.Entity.Models.AspNetUserLogin</summary>
+        </member>
+        <member name="M:Pal.Entity.Models.Fakes.ShimAspNetUserLogin.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Pal.Entity.Models.Fakes.ShimAspNetUserLogin.#ctor(Pal.Entity.Models.AspNetUserLogin)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Pal.Entity.Models.Fakes.ShimAspNetUserLogin.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserLogin.AllInstances.AspNetUserGet">
+            <summary>Sets the shim of AspNetUserLogin.get_AspNetUser()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserLogin.AllInstances.AspNetUserSetAspNetUser">
+            <summary>Sets the shim of AspNetUserLogin.set_AspNetUser(AspNetUser value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserLogin.AllInstances.LoginProviderGet">
+            <summary>Sets the shim of AspNetUserLogin.get_LoginProvider()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserLogin.AllInstances.LoginProviderSetString">
+            <summary>Sets the shim of AspNetUserLogin.set_LoginProvider(String value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserLogin.AllInstances.ProviderKeyGet">
+            <summary>Sets the shim of AspNetUserLogin.get_ProviderKey()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserLogin.AllInstances.ProviderKeySetString">
+            <summary>Sets the shim of AspNetUserLogin.set_ProviderKey(String value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserLogin.AllInstances.UserIdGet">
+            <summary>Sets the shim of AspNetUserLogin.get_UserId()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserLogin.AllInstances.UserIdSetString">
+            <summary>Sets the shim of AspNetUserLogin.set_UserId(String value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserLogin.AspNetUserGet">
+            <summary>Sets the shim of AspNetUserLogin.get_AspNetUser()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserLogin.AspNetUserSetAspNetUser">
+            <summary>Sets the shim of AspNetUserLogin.set_AspNetUser(AspNetUser value)</summary>
+        </member>
+        <member name="M:Pal.Entity.Models.Fakes.ShimAspNetUserLogin.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Pal.Entity.Models.Fakes.ShimAspNetUserLogin.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserLogin.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserLogin.Constructor">
+            <summary>Sets the shim of AspNetUserLogin.AspNetUserLogin()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserLogin.LoginProviderGet">
+            <summary>Sets the shim of AspNetUserLogin.get_LoginProvider()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserLogin.LoginProviderSetString">
+            <summary>Sets the shim of AspNetUserLogin.set_LoginProvider(String value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserLogin.ProviderKeyGet">
+            <summary>Sets the shim of AspNetUserLogin.get_ProviderKey()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserLogin.ProviderKeySetString">
+            <summary>Sets the shim of AspNetUserLogin.set_ProviderKey(String value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserLogin.UserIdGet">
+            <summary>Sets the shim of AspNetUserLogin.get_UserId()</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.ShimAspNetUserLogin.UserIdSetString">
+            <summary>Sets the shim of AspNetUserLogin.set_UserId(String value)</summary>
+        </member>
+        <member name="T:Pal.Entity.Models.Fakes.StubAspNetRole">
+            <summary>Stub type of Pal.Entity.Models.AspNetRole</summary>
+        </member>
+        <member name="M:Pal.Entity.Models.Fakes.StubAspNetRole.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.StubAspNetRole.AspNetUsers">
+            <summary>Sets the stub of AspNetRole.get_AspNetUsers()</summary>
+        </member>
+        <member name="F:Pal.Entity.Models.Fakes.StubAspNetRole.AspNetUsersGet">
+            <summary>Sets the stub of AspNetRole.get_AspNetUsers()</summary>
+        </member>
+        <member name="F:Pal.Entity.Models.Fakes.StubAspNetRole.AspNetUsersSetICollectionOfAspNetUser">
+            <summary>Sets the stub of AspNetRole.set_AspNetUsers(ICollection`1&lt;AspNetUser&gt; value)</summary>
+        </member>
+        <member name="M:Pal.Entity.Models.Fakes.StubAspNetRole.AttachBackingFieldToAspNetUsers">
+            <summary>Attaches delegates to emulate StubAspNetRole.AspNetUsers as a property with a backing field.</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.StubAspNetRole.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Pal.Entity.Models.Fakes.StubAspNetRole.InitializeStub">
+            <summary>Initializes a new instance of type StubAspNetRole</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.StubAspNetRole.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.StubAspNetRole.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Pal.Entity.Models.Fakes.StubAspNetUser">
+            <summary>Stub type of Pal.Entity.Models.AspNetUser</summary>
+        </member>
+        <member name="M:Pal.Entity.Models.Fakes.StubAspNetUser.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.StubAspNetUser.AspNetRoles">
+            <summary>Sets the stub of AspNetUser.get_AspNetRoles()</summary>
+        </member>
+        <member name="F:Pal.Entity.Models.Fakes.StubAspNetUser.AspNetRolesGet">
+            <summary>Sets the stub of AspNetUser.get_AspNetRoles()</summary>
+        </member>
+        <member name="F:Pal.Entity.Models.Fakes.StubAspNetUser.AspNetRolesSetICollectionOfAspNetRole">
+            <summary>Sets the stub of AspNetUser.set_AspNetRoles(ICollection`1&lt;AspNetRole&gt; value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.StubAspNetUser.AspNetUserClaims">
+            <summary>Sets the stub of AspNetUser.get_AspNetUserClaims()</summary>
+        </member>
+        <member name="F:Pal.Entity.Models.Fakes.StubAspNetUser.AspNetUserClaimsGet">
+            <summary>Sets the stub of AspNetUser.get_AspNetUserClaims()</summary>
+        </member>
+        <member name="F:Pal.Entity.Models.Fakes.StubAspNetUser.AspNetUserClaimsSetICollectionOfAspNetUserClaim">
+            <summary>Sets the stub of AspNetUser.set_AspNetUserClaims(ICollection`1&lt;AspNetUserClaim&gt; value)</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.StubAspNetUser.AspNetUserLogins">
+            <summary>Sets the stub of AspNetUser.get_AspNetUserLogins()</summary>
+        </member>
+        <member name="F:Pal.Entity.Models.Fakes.StubAspNetUser.AspNetUserLoginsGet">
+            <summary>Sets the stub of AspNetUser.get_AspNetUserLogins()</summary>
+        </member>
+        <member name="F:Pal.Entity.Models.Fakes.StubAspNetUser.AspNetUserLoginsSetICollectionOfAspNetUserLogin">
+            <summary>Sets the stub of AspNetUser.set_AspNetUserLogins(ICollection`1&lt;AspNetUserLogin&gt; value)</summary>
+        </member>
+        <member name="M:Pal.Entity.Models.Fakes.StubAspNetUser.AttachBackingFieldToAspNetRoles">
+            <summary>Attaches delegates to emulate StubAspNetUser.AspNetRoles as a property with a backing field.</summary>
+        </member>
+        <member name="M:Pal.Entity.Models.Fakes.StubAspNetUser.AttachBackingFieldToAspNetUserClaims">
+            <summary>Attaches delegates to emulate StubAspNetUser.AspNetUserClaims as a property with a backing field.</summary>
+        </member>
+        <member name="M:Pal.Entity.Models.Fakes.StubAspNetUser.AttachBackingFieldToAspNetUserLogins">
+            <summary>Attaches delegates to emulate StubAspNetUser.AspNetUserLogins as a property with a backing field.</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.StubAspNetUser.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Pal.Entity.Models.Fakes.StubAspNetUser.InitializeStub">
+            <summary>Initializes a new instance of type StubAspNetUser</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.StubAspNetUser.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.StubAspNetUser.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Pal.Entity.Models.Fakes.StubAspNetUserClaim">
+            <summary>Stub type of Pal.Entity.Models.AspNetUserClaim</summary>
+        </member>
+        <member name="M:Pal.Entity.Models.Fakes.StubAspNetUserClaim.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.StubAspNetUserClaim.AspNetUser">
+            <summary>Sets the stub of AspNetUserClaim.get_AspNetUser()</summary>
+        </member>
+        <member name="F:Pal.Entity.Models.Fakes.StubAspNetUserClaim.AspNetUserGet">
+            <summary>Sets the stub of AspNetUserClaim.get_AspNetUser()</summary>
+        </member>
+        <member name="F:Pal.Entity.Models.Fakes.StubAspNetUserClaim.AspNetUserSetAspNetUser">
+            <summary>Sets the stub of AspNetUserClaim.set_AspNetUser(AspNetUser value)</summary>
+        </member>
+        <member name="M:Pal.Entity.Models.Fakes.StubAspNetUserClaim.AttachBackingFieldToAspNetUser">
+            <summary>Attaches delegates to emulate StubAspNetUserClaim.AspNetUser as a property with a backing field.</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.StubAspNetUserClaim.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Pal.Entity.Models.Fakes.StubAspNetUserClaim.InitializeStub">
+            <summary>Initializes a new instance of type StubAspNetUserClaim</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.StubAspNetUserClaim.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.StubAspNetUserClaim.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Pal.Entity.Models.Fakes.StubAspNetUserLogin">
+            <summary>Stub type of Pal.Entity.Models.AspNetUserLogin</summary>
+        </member>
+        <member name="M:Pal.Entity.Models.Fakes.StubAspNetUserLogin.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.StubAspNetUserLogin.AspNetUser">
+            <summary>Sets the stub of AspNetUserLogin.get_AspNetUser()</summary>
+        </member>
+        <member name="F:Pal.Entity.Models.Fakes.StubAspNetUserLogin.AspNetUserGet">
+            <summary>Sets the stub of AspNetUserLogin.get_AspNetUser()</summary>
+        </member>
+        <member name="F:Pal.Entity.Models.Fakes.StubAspNetUserLogin.AspNetUserSetAspNetUser">
+            <summary>Sets the stub of AspNetUserLogin.set_AspNetUser(AspNetUser value)</summary>
+        </member>
+        <member name="M:Pal.Entity.Models.Fakes.StubAspNetUserLogin.AttachBackingFieldToAspNetUser">
+            <summary>Attaches delegates to emulate StubAspNetUserLogin.AspNetUser as a property with a backing field.</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.StubAspNetUserLogin.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Pal.Entity.Models.Fakes.StubAspNetUserLogin.InitializeStub">
+            <summary>Initializes a new instance of type StubAspNetUserLogin</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.StubAspNetUserLogin.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Pal.Entity.Models.Fakes.StubAspNetUserLogin.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>
