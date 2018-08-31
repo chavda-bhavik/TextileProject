@@ -140,7 +140,7 @@ namespace Pal.Entities.Models
 
         //public DbSet<Login> Logins { get; set; }
       //  public DbSet<Register> tmpRegister { get; set; }
-        //public DbSet<tblLists> tblLists { get; set; }
+        public DbSet<tblLists> tblLists { get; set; }
         
     }
 }

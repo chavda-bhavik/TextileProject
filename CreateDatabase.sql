@@ -106,18 +106,37 @@ CREATE TABLE [dbo].[AspNetUsers](
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 
 GO
-/****** Object:  Table [dbo].[Lists]    Script Date: 7/8/2017 5:34:01 PM ******/
+CREATE TABLE [dbo].[AuditLog](
+	[auditlogid] [uniqueidentifier] NOT NULL,
+	[userid] [varchar](100) NOT NULL,
+	[eventdateutc] [datetime] NOT NULL,
+	[eventtype] [char](1) NOT NULL,
+	[tablename] [nvarchar](100) NOT NULL,
+	[recordid] [nvarchar](100) NOT NULL,
+	[columnname] [nvarchar](100) NOT NULL,
+	[originalvalue] [nvarchar](max) NULL,
+	[newvalue] [nvarchar](max) NULL,
+ CONSTRAINT [PK_AuditLog] PRIMARY KEY NONCLUSTERED 
+(
+	[auditlogid] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [dbo].[tblLists]    Script Date: 7/8/2017 5:34:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 SET ANSI_PADDING ON
 GO
-CREATE TABLE [dbo].[Lists](
+CREATE TABLE [dbo].[tblLists](
 	[Id] [int] NOT NULL,
-	[ListType] [varchar](100) NOT NULL,
-	[ListValueType] [int] NULL,
-	[ListValue] [varchar](100) NULL,
+	[ListType] [varchar](100) NOT NULL,	
+	[ListValue] [int] NULL,
 	[ListDescription] [varchar](500) NOT NULL,
 	[SortOrder] [int] NULL,
 	[Lock] [bit] NOT NULL,

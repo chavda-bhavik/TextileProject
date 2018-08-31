@@ -43,9 +43,13 @@ namespace PalWeb.App_Start
 
                 .RegisterType<IDataContextAsync, PalContext>(new PerRequestLifetimeManager())
                 .RegisterType<IUnitOfWorkAsync, UnitOfWork>(new PerRequestLifetimeManager())
-                 .RegisterType<IRepositoryAsync<AuditLog>, Repository<AuditLog>>(new PerRequestLifetimeManager())
+				 .RegisterType<IRepositoryAsync<AuditLog>, Repository<AuditLog>>(new PerRequestLifetimeManager())
+				 .RegisterType<IRepositoryAsync<tblLists>, Repository<tblLists>>(new PerRequestLifetimeManager())
 
-                 //.RegisterType<IRegisterServices, RegisterServices>(new PerRequestLifetimeManager())
+				 .RegisterType<IAuditLogService, AuditLogService>(new PerRequestLifetimeManager())
+				 .RegisterType<IListService, ListService>(new PerRequestLifetimeManager())
+				 
+			//.RegisterType<IRegisterServices, RegisterServices>(new PerRequestLifetimeManager())
 			;
 
 			container.RegisterType<AccountController>(

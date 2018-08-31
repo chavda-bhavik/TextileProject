@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Pal.Services;
+using Repository.Pattern.UnitOfWork;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,8 +10,15 @@ namespace PalWeb.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: Home
-        public ActionResult Index()
+		private IUnitOfWorkAsync _unitOfWork;
+		private IListService _ListService;
+		public HomeController(IUnitOfWorkAsync unitOfWork, IListService listService)
+		{
+			_unitOfWork = unitOfWork;
+			_ListService = listService;
+		}
+		// GET: Home
+		public ActionResult Index()
 		{
 			if (User.Identity.IsAuthenticated)
 			{
