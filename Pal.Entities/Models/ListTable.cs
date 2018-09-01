@@ -19,7 +19,6 @@ namespace Pal.Entities.Models
 		[StringLength(100)]
 		public string ListType { get; set; }
 
-		[StringLength(100)]
 		public int?  ListValue { get; set; }
 
 		[Required]
