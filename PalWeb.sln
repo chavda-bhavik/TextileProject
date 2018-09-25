@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pal.Services", "Pal.Services\Pal.Services.csproj", "{26F579D6-9945-480B-B726-509B13F4B48E}"
 EndProject
@@ -16,6 +16,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PalWeb", "PalWeb\PalWeb.csproj", "{F023F8EE-68FF-40D6-A42E-92ACBC4EC2FC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pal.Entities", "Pal.Entities\Pal.Entities.csproj", "{1169D710-B299-4E22-B9A6-66B55BE71E8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pal.Emailing", "Pal.Emailing\Pal.Emailing.csproj", "{32E8C319-D631-4ED5-A9EE-985BB00BAFCF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,8 +83,19 @@ Global
 		{1169D710-B299-4E22-B9A6-66B55BE71E8A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1169D710-B299-4E22-B9A6-66B55BE71E8A}.Release|x86.ActiveCfg = Release|Any CPU
 		{1169D710-B299-4E22-B9A6-66B55BE71E8A}.Release|x86.Build.0 = Release|Any CPU
+		{32E8C319-D631-4ED5-A9EE-985BB00BAFCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32E8C319-D631-4ED5-A9EE-985BB00BAFCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32E8C319-D631-4ED5-A9EE-985BB00BAFCF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{32E8C319-D631-4ED5-A9EE-985BB00BAFCF}.Debug|x86.Build.0 = Debug|Any CPU
+		{32E8C319-D631-4ED5-A9EE-985BB00BAFCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32E8C319-D631-4ED5-A9EE-985BB00BAFCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32E8C319-D631-4ED5-A9EE-985BB00BAFCF}.Release|x86.ActiveCfg = Release|Any CPU
+		{32E8C319-D631-4ED5-A9EE-985BB00BAFCF}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF38CA78-F44A-466D-B90D-52B0D840A209}
 	EndGlobalSection
 EndGlobal

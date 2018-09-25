@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pal.Emailing;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,13 +15,13 @@ namespace Pal.Utility
 	}
 
 	public class Helper
-    {
+	{
 		public static string GetAutoCode(int id)
 		{
 			id = id + 1;
 			if (id < 10)
 				return "00" + id.ToString();
-			else if(id > 9 && id <100)
+			else if (id > 9 && id < 100)
 				return "0" + id.ToString();
 			else
 				return id.ToString();
@@ -38,288 +39,288 @@ namespace Pal.Utility
 		}
 
 		public static string GetSQLValue(object value)
-        {
-            string sqlValue = string.Empty;
+		{
+			string sqlValue = string.Empty;
 
-            if (value is DateTime)
-            {
-                sqlValue = "'" + Convert.ToString((DateTime)value) + "'";
-            }
+			if (value is DateTime)
+			{
+				sqlValue = "'" + Convert.ToString((DateTime)value) + "'";
+			}
 
-            if (value is string)
-            {
-                sqlValue = "'" + ((string)value).Replace("'", "''") + "'";
-            }
+			if (value is string)
+			{
+				sqlValue = "'" + ((string)value).Replace("'", "''") + "'";
+			}
 
-            if (value is int || value is double || value is long || value is decimal)
-            {
-                sqlValue = value.ToString();
-            }
+			if (value is int || value is double || value is long || value is decimal)
+			{
+				sqlValue = value.ToString();
+			}
 
-            if (value is bool)
-            {
-                sqlValue = (value.Equals(true) ? "1" : "0");
-            }
-            if (value == null)
-            {
-                sqlValue = "null";
-            }
-            return sqlValue;
-        }
+			if (value is bool)
+			{
+				sqlValue = (value.Equals(true) ? "1" : "0");
+			}
+			if (value == null)
+			{
+				sqlValue = "null";
+			}
+			return sqlValue;
+		}
 
-        //public static string GetSQLValue(object value, Field f)
-        //{
+		//public static string GetSQLValue(object value, Field f)
+		//{
 
-        //	string sqlValue = string.Empty;
-        //	if (value == null || value.Equals(string.Empty) )
-        //	{
-        //		return "null";
-        //	}
+		//	string sqlValue = string.Empty;
+		//	if (value == null || value.Equals(string.Empty) )
+		//	{
+		//		return "null";
+		//	}
 
-        //	switch (f.FieldType.ToLower())
-        //	{
-        //		case "datetime":
-        //			{
-        //				sqlValue = "'" + value.ToString() + "'" ;//"'" + Convert.ToString((DateTime)value) + "'";
-        //				break;
-        //			}
-        //		case "text":
-        //		case "longtext":
-        //		case "char":
-        //		case "html":
-        //		case "multiline text":
-        //		case "multiselect":
-        //			{
-        //				sqlValue = "'" + ((string)value).Replace("'", "''") + "'";
-        //				break;
-        //			}
-        //		case "integer":
-        //		case "double":
-        //		case "numeric":
-        //		case "listitem":
-        //		case "singleselection":
-        //			{
-        //				sqlValue = value.ToString();
-        //				break;
-        //			}
-        //		case "boolean":
-        //			{
-        //				sqlValue = (value.Equals(true) ? "1" : "0");
-        //				break;
-        //			}
-        //		case "documentattachment":
-        //			{
-        //				if (f.EntityId == 6)
-        //				{
-        //					sqlValue = "'" + ((string)value).Replace("'", "''") + "'";
-        //				}
-        //				else
-        //				{
-        //					sqlValue = value.ToString();
-        //				}
-        //				break;
-        //			}
-        //		default:
-        //			{
-        //				throw new InvalidOperationException();
-        //			}
-        //	}
+		//	switch (f.FieldType.ToLower())
+		//	{
+		//		case "datetime":
+		//			{
+		//				sqlValue = "'" + value.ToString() + "'" ;//"'" + Convert.ToString((DateTime)value) + "'";
+		//				break;
+		//			}
+		//		case "text":
+		//		case "longtext":
+		//		case "char":
+		//		case "html":
+		//		case "multiline text":
+		//		case "multiselect":
+		//			{
+		//				sqlValue = "'" + ((string)value).Replace("'", "''") + "'";
+		//				break;
+		//			}
+		//		case "integer":
+		//		case "double":
+		//		case "numeric":
+		//		case "listitem":
+		//		case "singleselection":
+		//			{
+		//				sqlValue = value.ToString();
+		//				break;
+		//			}
+		//		case "boolean":
+		//			{
+		//				sqlValue = (value.Equals(true) ? "1" : "0");
+		//				break;
+		//			}
+		//		case "documentattachment":
+		//			{
+		//				if (f.EntityId == 6)
+		//				{
+		//					sqlValue = "'" + ((string)value).Replace("'", "''") + "'";
+		//				}
+		//				else
+		//				{
+		//					sqlValue = value.ToString();
+		//				}
+		//				break;
+		//			}
+		//		default:
+		//			{
+		//				throw new InvalidOperationException();
+		//			}
+		//	}
 
-        //	return sqlValue;
+		//	return sqlValue;
 
-        //}
+		//}
 
-        public static string GetString(object value)
-        {
-            if ((value == null) || (value is DBNull && value.Equals(DBNull.Value)))
-            {
-                return string.Empty;
-            }
-            else
-            {
-                return System.Convert.ToString(value);
-            }
-        }
+		public static string GetString(object value)
+		{
+			if ((value == null) || (value is DBNull && value.Equals(DBNull.Value)))
+			{
+				return string.Empty;
+			}
+			else
+			{
+				return System.Convert.ToString(value);
+			}
+		}
 
-        public static int GetInt32(object value)
-        {
-            if ((value == null) || (value.Equals(DBNull.Value)) || (value is string && string.IsNullOrEmpty((string)value)))
-            {
-                return 0;
-            }
-            else
-            {
-                return System.Convert.ToInt32(value);
-            }
-        }
+		public static int GetInt32(object value)
+		{
+			if ((value == null) || (value.Equals(DBNull.Value)) || (value is string && string.IsNullOrEmpty((string)value)))
+			{
+				return 0;
+			}
+			else
+			{
+				return System.Convert.ToInt32(value);
+			}
+		}
 
-        public static bool GetBoolean(object value)
-        {
-            if (value == null || (value is DBNull && value.Equals(DBNull.Value)))
-            {
-                return false;
-            }
-            else
-            {
-                return System.Convert.ToBoolean(value);
-            }
-        }
+		public static bool GetBoolean(object value)
+		{
+			if (value == null || (value is DBNull && value.Equals(DBNull.Value)))
+			{
+				return false;
+			}
+			else
+			{
+				return System.Convert.ToBoolean(value);
+			}
+		}
 
-        public static DateTime GetDateTime(object value)
-        {
-            if ((value == null) || (value is DBNull && value.Equals(DBNull.Value)))
-            {
-                return DateTime.MinValue;
-            }
-            else
-            {
-                return System.Convert.ToDateTime(value);
-            }
-        }
+		public static DateTime GetDateTime(object value)
+		{
+			if ((value == null) || (value is DBNull && value.Equals(DBNull.Value)))
+			{
+				return DateTime.MinValue;
+			}
+			else
+			{
+				return System.Convert.ToDateTime(value);
+			}
+		}
 
-        public static DateTime GetDateTimeFromJavaScript(string val)
-        {
-            try
-            {
-                string s = val.Substring(4, 11);
-                return System.DateTime.Parse(s);
-            }
-            catch
-            {
-                return DateTime.MinValue;
-            }
-        }
+		public static DateTime GetDateTimeFromJavaScript(string val)
+		{
+			try
+			{
+				string s = val.Substring(4, 11);
+				return System.DateTime.Parse(s);
+			}
+			catch
+			{
+				return DateTime.MinValue;
+			}
+		}
 
-        public static string GetDateString(object value, string format = "dd/MM/yyyy")
-        {
-            if ((value == null) || (value is DBNull && value.Equals(DBNull.Value)))
-            {
-                return string.Empty;
-            }
-            else
-            {
-                return Convert.ToDateTime(value).ToString(format);
-            }
-        }
+		public static string GetDateString(object value, string format = "dd/MM/yyyy")
+		{
+			if ((value == null) || (value is DBNull && value.Equals(DBNull.Value)))
+			{
+				return string.Empty;
+			}
+			else
+			{
+				return Convert.ToDateTime(value).ToString(format);
+			}
+		}
 
-        public static string GetInt32Text(object value, int emptyValue)
-        {
-            int i = GetInt32(value);
+		public static string GetInt32Text(object value, int emptyValue)
+		{
+			int i = GetInt32(value);
 
-            return (i.Equals(emptyValue)) ? String.Empty : i.ToString();
-        }
+			return (i.Equals(emptyValue)) ? String.Empty : i.ToString();
+		}
 
-        public static string GetDateShortText(DateTime dt)
-        {
-            return (dt.Equals(DateTime.MinValue)) ? string.Empty : dt.ToShortDateString();
-        }
+		public static string GetDateShortText(DateTime dt)
+		{
+			return (dt.Equals(DateTime.MinValue)) ? string.Empty : dt.ToShortDateString();
+		}
 
-        public static string GetDateShortText(object o)
-        {
-            return GetDateShortText(GetDateTime(o));
-        }
+		public static string GetDateShortText(object o)
+		{
+			return GetDateShortText(GetDateTime(o));
+		}
 
-        public static double GetDouble(object value)
-        {
-            if ((value == null) || (value is DBNull && value.Equals(DBNull.Value)) || (value.Equals(string.Empty)))
-            {
-                return 0;
-            }
-            else
-            {
-                return System.Convert.ToDouble(value);
-            }
-        }
+		public static double GetDouble(object value)
+		{
+			if ((value == null) || (value is DBNull && value.Equals(DBNull.Value)) || (value.Equals(string.Empty)))
+			{
+				return 0;
+			}
+			else
+			{
+				return System.Convert.ToDouble(value);
+			}
+		}
 
-        public static decimal GetDecimal(object value)
-        {
-            if ((value == null) || (value is DBNull && value.Equals(DBNull.Value)) || (value is string && string.IsNullOrEmpty(value as string)))
-            {
-                return 0;
-            }
-            else
-            {
-                return System.Convert.ToDecimal(value);
-            }
-        }
+		public static decimal GetDecimal(object value)
+		{
+			if ((value == null) || (value is DBNull && value.Equals(DBNull.Value)) || (value is string && string.IsNullOrEmpty(value as string)))
+			{
+				return 0;
+			}
+			else
+			{
+				return System.Convert.ToDecimal(value);
+			}
+		}
 
-        public static object GetValueIfContains(DataRow dr, string col)
-        {
-            return GetValueIfContains(dr.Table.Columns, dr, col);
-        }
+		public static object GetValueIfContains(DataRow dr, string col)
+		{
+			return GetValueIfContains(dr.Table.Columns, dr, col);
+		}
 
-        public static object GetValueIfContains(DataColumnCollection columns, DataRow dr, string col)
-        {
-            return (columns.Contains(col) ? dr[col] : null);
-        }
+		public static object GetValueIfContains(DataColumnCollection columns, DataRow dr, string col)
+		{
+			return (columns.Contains(col) ? dr[col] : null);
+		}
 
-        public static DateTime GetString2Date(object value, string formatType = "dd/MM/yyyy")
-        {
-            if ((value == null) || (value is DBNull && value.Equals(DBNull.Value)))
-            {
-                return DateTime.MinValue;
-            }
-            else
-            {
-                return DateTime.ParseExact(value.ToString(), formatType, System.Globalization.CultureInfo.CreateSpecificCulture("en-GB"));
-            }
+		public static DateTime GetString2Date(object value, string formatType = "dd/MM/yyyy")
+		{
+			if ((value == null) || (value is DBNull && value.Equals(DBNull.Value)))
+			{
+				return DateTime.MinValue;
+			}
+			else
+			{
+				return DateTime.ParseExact(value.ToString(), formatType, System.Globalization.CultureInfo.CreateSpecificCulture("en-GB"));
+			}
 
-        }
+		}
 
-        //public static string ConvertDataTableToJSon(DataTable dt)
-        //{
-        //	System.Web.Script.Serialization.JavaScriptSerializer serializer = new System.Web.Script.Serialization.JavaScriptSerializer();
-        //	List<Dictionary<string, object>> rows = new List<Dictionary<string, object>>();
-        //	Dictionary<string, object> row = new Dictionary<string, object>();
-        //	DataColumnCollection columns = dt.Columns;
+		//public static string ConvertDataTableToJSon(DataTable dt)
+		//{
+		//	System.Web.Script.Serialization.JavaScriptSerializer serializer = new System.Web.Script.Serialization.JavaScriptSerializer();
+		//	List<Dictionary<string, object>> rows = new List<Dictionary<string, object>>();
+		//	Dictionary<string, object> row = new Dictionary<string, object>();
+		//	DataColumnCollection columns = dt.Columns;
 
-        //	try
-        //	{
-        //		foreach (DataRow dr in dt.Rows)
-        //		{
-        //			row = new Dictionary<string, object>();
-        //			foreach (DataColumn col in columns)
-        //			{
-        //				row.Add(col.ColumnName, dr[col].ToString());
-        //			}
-        //			rows.Add(row);
-        //		}
+		//	try
+		//	{
+		//		foreach (DataRow dr in dt.Rows)
+		//		{
+		//			row = new Dictionary<string, object>();
+		//			foreach (DataColumn col in columns)
+		//			{
+		//				row.Add(col.ColumnName, dr[col].ToString());
+		//			}
+		//			rows.Add(row);
+		//		}
 
-        //		return serializer.Serialize(rows);
-        //	}
+		//		return serializer.Serialize(rows);
+		//	}
 
-        //	catch (Exception ex)
-        //	{
-        //		throw;
-        //	}
-        //}
+		//	catch (Exception ex)
+		//	{
+		//		throw;
+		//	}
+		//}
 
-        public static List<SelectionDropdownVM> ConvertToSelectionDropdownVM(DataTable dt, string primaryKeyColName, string nameColName, string otherDataColName)
-        {
-            DataColumnCollection columns = dt.Columns;
-            bool isOtherData = !string.IsNullOrEmpty(otherDataColName);
-            List<SelectionDropdownVM> lst = new List<SelectionDropdownVM>();
-            try
-            {
-                foreach (DataRow dr in dt.Rows)
-                {
-                    SelectionDropdownVM row = new SelectionDropdownVM();
-                    row.PrimaryKey = GetInt32(dr[primaryKeyColName]).ToString();
-                    row.Name = GetString(dr[nameColName]);
-                    if (isOtherData)
-                        row.OtherField = GetString(dr[otherDataColName]);
+		public static List<SelectionDropdownVM> ConvertToSelectionDropdownVM(DataTable dt, string primaryKeyColName, string nameColName, string otherDataColName)
+		{
+			DataColumnCollection columns = dt.Columns;
+			bool isOtherData = !string.IsNullOrEmpty(otherDataColName);
+			List<SelectionDropdownVM> lst = new List<SelectionDropdownVM>();
+			try
+			{
+				foreach (DataRow dr in dt.Rows)
+				{
+					SelectionDropdownVM row = new SelectionDropdownVM();
+					row.PrimaryKey = GetInt32(dr[primaryKeyColName]).ToString();
+					row.Name = GetString(dr[nameColName]);
+					if (isOtherData)
+						row.OtherField = GetString(dr[otherDataColName]);
 
-                    lst.Add(row);
-                }
+					lst.Add(row);
+				}
 
-                return lst;
-            }
+				return lst;
+			}
 
-            catch (Exception ex)
-            {
-                throw;
-            }
-        }
+			catch (Exception ex)
+			{
+				throw;
+			}
+		}
 
 		public static DateTime ConvertUTCtoUserDate(string userTimeZone, DateTime utcDate)
 		{
@@ -344,7 +345,31 @@ namespace Pal.Utility
 
 			return tzi;
 		}
-		
+
+		public static void SendMail(string ToEmail, string Body, string Subject = "")
+		{
+			try
+			{
+				if (string.IsNullOrEmpty(Subject))
+					Subject = EmailConfig.PALEmailSubject;
+
+				IEmailing emailing = EmailingFactory.Create();
+				EmailingMessage mail = new EmailingMessage();
+				mail.FromEmail = EmailConfig.PALEmailSMTPServerAuthUserName;
+				mail.Format = EmailFormat.Html;
+				mail.Body = Body;
+				mail.Subject = Subject;
+				if (EmailConfig.PALEmailMode.ToUpper() == "TEST")
+					mail.ToEmail = EmailConfig.PALEmailTo;
+				else
+					mail.ToEmail = ToEmail;
+				emailing.SendEmail(mail);
+			}
+			catch (Exception ex)
+			{
+				throw ex;
+			}
+		}
 	}
 
 	public static class DHExtension
@@ -373,21 +398,21 @@ namespace Pal.Utility
 						dt = Helper.ConvertUTCtoUserDate(timeZone, dt);
 						value = dt.ToString("g");
 					}
-					
+
 				}
 				row[column] = value;
-				
+
 			}
 		}
 	}
 
 	public class SelectionDropdownVM
-    {
-        public string PrimaryKey { get; set; }
-        public string Name { get; set; }
-        public string OtherField { get; set; }
+	{
+		public string PrimaryKey { get; set; }
+		public string Name { get; set; }
+		public string OtherField { get; set; }
 
-    }
+	}
 
 	public static class IEnumerableExtensions
 	{
