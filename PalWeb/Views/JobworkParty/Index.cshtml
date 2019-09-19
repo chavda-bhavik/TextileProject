@@ -1,0 +1,70 @@
+﻿@model IEnumerable<Pal.Entities.Models.JobworkParty>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section class="section-container">
+
+    <!-- Page content-->
+    <div class="content-wrapper">
+        @*<div class="content-heading">
+                <div>Jobwork Party</div>
+                <small>
+                    @Html.ActionLink("Create New", "Create")
+                </small>
+            </div>*@
+        <div class="card card-default">
+            <div class="card-header">
+                Jobwork Party
+                <input type="button" class="btn btn-success float-right" value="Create New" data-bind="click:showJobworkPartyModel" />
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.OwnerName)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.AgencyName)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Address)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Mobile)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.EmailID)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.GSTNo)
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody data-bind="foreach: JobworkParties">
+                                <tr>
+                                    <td data-bind="text:OwnerName"></td>
+                                    <td data-bind="text:AgencyName"></td>
+                                    <td data-bind="text:Address"></td>
+                                    <td data-bind="text:Mobile"></td>
+                                    <td data-bind="text:EmailID"></td>
+                                    <td data-bind="text:GSTNo"></td>
+                                    <td>
+                                        @*@Html.ActionLink("Edit", "Edit", new { id = item.Code }) |
+                                            @Html.ActionLink("Delete", "Delete", new { id = item.Code })*@
+                                        <input type="button" class="btn btn-primary" value="Edit" data-bind="click:EditJobworkParty"/>
+                                        <input type="button" class="btn btn-danger" value="Delete"  data-bind="click:DeleteJobworkParty" />
+                                    </td>
+                                </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

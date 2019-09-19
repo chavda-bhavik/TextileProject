@@ -20,14 +20,14 @@ namespace PalWeb.Controllers
 		// GET: Home
 		public ActionResult Index()
 		{
-			if (User.Identity.IsAuthenticated)
-			{
+			//if (User.Identity.IsAuthenticated)
+			//{
 				return View();
-			}
-			else
-			{
-				return RedirectToAction("Login", "Account");
-			}
+			//}
+			//else
+			//{
+			//	return RedirectToAction("Login", "Account");
+			//}
 		}
 
         // GET: Home/Details/5

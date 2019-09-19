@@ -10,7 +10,9 @@ namespace Pal.Utility
 	{
 		public enum EnumListType
 		{
-
+            Cotton = 0,
+            Nylon = 1,
+            Smooth = 2
 		}
 	}
 }

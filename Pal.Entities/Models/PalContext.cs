@@ -142,6 +142,7 @@ namespace Pal.Entities.Models
       //  public DbSet<Register> tmpRegister { get; set; }
         public DbSet<tblLists> tblLists { get; set; }
 		public DbSet<AuditLog> AuditLog { get; set; }
-        
+        public DbSet<JobworkParty> JobworkParty { get; set; }
+
     }
 }
