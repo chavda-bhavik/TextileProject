@@ -109,9 +109,10 @@ var UserViewModel = function () {
     self.changed = function () {
         var pno = self.PartyNo();
         for (var i = 0; i < self.fetchJobworkParties().length; i++) {
-            let id = self.fetchJobworkParties()[i],
+            //let id = self.fetchJobworkParties()[i],
         }
     }
+    //abc
     
 }
 var JobworkModel = function () {
