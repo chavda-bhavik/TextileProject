@@ -105,15 +105,39 @@ var UserViewModel = function () {
     self.PartyNo = ko.observable();
     self.PartyName = ko.observable();
     self.PhoneNumber = ko.observable();
+    self.VoucherNo = ko.observable();
 
-    self.changed = function () {
+    self.VoucherNochanged = function () {
+        let voucherno = self.VoucherNo();
+        var data = { voucherno: voucherno };
+        $.ajax({
+            url: '/Jobwork/CheckVoucherNo',
+            type: 'POST',
+            //contentType: 'application/json;charset=utf-8',
+            //data: ko.toJSON({data: JobworkParty}),
+            data: { 'voucherno': voucherno },
+            success: function (response) {
+                console.log(response);
+            },
+            error: function (err) {
+                console.log(err);
+            }
+        });
+    }
+    self.PatryNochanged = function () {
         var pno = self.PartyNo();
-        for (var i = 0; i < self.fetchJobworkParties().length; i++) {
-            //let id = self.fetchJobworkParties()[i],
+        for (var i = 0; i < self.JobworkParties().length; i++) {
+            let id = self.JobworkParties()[i].Code;
+            if (id == pno) {
+                console.log(self.JobworkParties()[i]);
+                self.PartyName = self.JobworkParties()[i].AgencyName;
+                $("#partyname").val(self.JobworkParties()[i].AgencyName);
+                self.PhoneNumber = self.JobworkParties()[i].Mobile;
+                $("#partyphone").val(self.JobworkParties()[i].Mobile);
+                //self.PhoneNumber = ko.observable(self.JobworkParties()[i].PhoneNumber);
+            }
         }
     }
-    //abc
-    
 }
 var JobworkModel = function () {
     self.JobworkParties = JobworkParties
@@ -127,9 +151,6 @@ const fetchJobworkParties = () => {
         ko.applyBindings(UsersView);
         
     });
-}
-const generatePurchaseCode = () => {
-    let code = "LOT1234"
 }
 $(document).ready(function () {
     fetchJobworkParties()
