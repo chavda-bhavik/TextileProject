@@ -42,7 +42,10 @@
   <ItemGroup>
     <Compile Include="AuditLogService.cs" />
     <Compile Include="JobworkPartyService.cs" />
+    <Compile Include="JobworkService.cs" />
     <Compile Include="ListService.cs" />
+    <Compile Include="OutwardsDetailsService.cs" />
+    <Compile Include="OutwardsService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

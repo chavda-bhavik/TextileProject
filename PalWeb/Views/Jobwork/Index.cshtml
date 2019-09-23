@@ -10,52 +10,52 @@
         <div class="card border-dark">
             <div class="card-header text-white bg-dark">Product</div>
             <div class="card-body">
-                    <div class="form-row align-items-center">
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label><b>Voucher No.</b></label>
-                                <input class="form-control" id="voucherno" type="text" placeholder="Voucher No." disabled>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label><b>Product Code</b></label>
-                                <input class="form-control" id="productCode" type="text" placeholder="LOT1234">
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label><b>HSN Type</b></label>
-                                <select class="custom-select custom-select-sm" name="HSNCode">
-                                    <option selected="">Dying</option>
-                                    <option value="1">Cutting</option>
-                                    <option value="2">Stiching</option>
-                                    <option value="3">Embroidary</option>
-                                    <option value="4">Packaging</option>
-                                </select>
-                            </div>
+                <div class="form-row align-items-center">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label><b>Voucher No.</b></label>
+                            <input class="form-control" id="voucherno" type="text" placeholder="Voucher No." disabled>
                         </div>
                     </div>
-                    <div class="form-row">
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label><b>Last Action Date</b></label>
-                                <input class="form-control" id="ActionDate" type="date" disabled>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label><b>Name</b></label>
-                                <input class="form-control" id="ActionName" type="text" placeholder="Purchased" disabled>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label><b>Status</b></label>
-                                <input class="form-control" id="ActionStatus" type="text" placeholder="Success" disabled>
-                            </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label><b>Product Code</b></label>
+                            <input class="form-control" id="productCode" type="text" placeholder="LOT1234">
                         </div>
                     </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label><b>HSN Type</b></label>
+                            <select class="custom-select custom-select-sm" name="HSNCode">
+                                <option selected="">Dying</option>
+                                <option value="1">Cutting</option>
+                                <option value="2">Stiching</option>
+                                <option value="3">Embroidary</option>
+                                <option value="4">Packaging</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label><b>Last Action Date</b></label>
+                            <input class="form-control" id="ActionDate" type="date" disabled>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label><b>Name</b></label>
+                            <input class="form-control" id="ActionName" type="text" placeholder="Purchased" disabled>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label><b>Status</b></label>
+                            <input class="form-control" id="ActionStatus" type="text" placeholder="Success" disabled>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="card-header text-white bg-dark">Jobwork Party</div>
             <div class="card-body">
@@ -63,19 +63,19 @@
                     <div class="col-md-2">
                         <div class="form-group">
                             <label><b>Party No.</b></label>
-                            <input class="form-control" id="partycode" type="text" placeholder="Party No.">
+                            <input class="form-control" id="partycode" type="text" placeholder="Party No." data-bind="value:PartyNo,event: { change: changed }">
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <label><b>Party Name</b></label>
-                            <input class="form-control" id="partyname" type="text" placeholder="Party Name" disabled>
+                            <input class="form-control" id="partyname" type="text" placeholder="Party Name" data-bind="value:PartyName" disabled >
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <label><b>Phone Number</b></label>
-                            <input class="form-control" id="partyphone" type="text" placeholder="Phone Number" disabled>
+                            <input class="form-control" id="partyphone" type="text" placeholder="Phone Number" disabled data-bind="value:PhoneNumber">
                         </div>
                     </div>
                     <div class="col-md-1">
@@ -94,6 +94,35 @@
                         <button type="button" class="btn btn-success mt-4" id="addParty">Add</button>
                     </div>
                 </div>
+            </div>
+            <div style="height:10px;width:100%;background-color:#3A3F51;"></div>
+            <div class="table-responsive p-3">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Product Code</th>
+                            <th>Party Name</th>
+                            <th>Phone Number</th>
+                            <th>Unit</th>
+                            <th>Quantity</th>
+                            <th>Edit</th>
+                            <th>Remove</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>LOT1234</td>
+                            <td>Namita Textile</td>
+                            <td>9638837399</td>
+                            <td>Meter</td>
+                            <td>15</td>
+                            <td><button class="btn btn-outline-inverse">EDIT</button></td>
+                            <td><button class="btn btn-outline-inverse">Remove</button></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

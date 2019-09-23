@@ -1,5 +1,8 @@
 ﻿var JobworkParties = []
+
 var UserViewModel = function () {
+
+    //For Jobwork Party Module
     self.Code = ko.observable();
     self.AgencyName = ko.observable();
     self.Address = ko.observable();
@@ -9,7 +12,6 @@ var UserViewModel = function () {
     self.GSTNo = ko.observable();
     self.JobworkParties = JobworkParties;
     self.JobworkParty;
-
     self.showJobworkPartyModel = function () {
         self.OwnerName = ko.observable();
         self.AgencyName = ko.observable();
@@ -98,6 +100,23 @@ var UserViewModel = function () {
             }
         });
     }
+
+    //For Jobwork Module
+    self.PartyNo = ko.observable();
+    self.PartyName = ko.observable();
+    self.PhoneNumber = ko.observable();
+
+    self.changed = function () {
+        var pno = self.PartyNo();
+        for (var i = 0; i < self.fetchJobworkParties().length; i++) {
+            let id = self.fetchJobworkParties()[i],
+        }
+    }
+    
+}
+var JobworkModel = function () {
+    self.JobworkParties = JobworkParties
+    self.PartyNo = ko.observable()
 }
 
 const fetchJobworkParties = () => {
@@ -105,6 +124,7 @@ const fetchJobworkParties = () => {
         JobworkParties = ko.observableArray(data);
         var UsersView = new UserViewModel();
         ko.applyBindings(UsersView);
+        
     });
 }
 const generatePurchaseCode = () => {
@@ -112,5 +132,4 @@ const generatePurchaseCode = () => {
 }
 $(document).ready(function () {
     fetchJobworkParties()
-    generatePurchaseCode();
 })

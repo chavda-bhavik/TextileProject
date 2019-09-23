@@ -143,6 +143,8 @@ namespace Pal.Entities.Models
         public DbSet<tblLists> tblLists { get; set; }
 		public DbSet<AuditLog> AuditLog { get; set; }
         public DbSet<JobworkParty> JobworkParty { get; set; }
-
+        public DbSet<Jobwork> Jobwork { get; set; }
+        public DbSet<Outwards> Outwards { get; set; }
+        public DbSet<OutwardsDetails> OutwardsDetails { get; set; }
     }
 }

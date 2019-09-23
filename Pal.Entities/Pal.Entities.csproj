@@ -53,8 +53,11 @@
     <Compile Include="Models\AspNetUserClaim.cs" />
     <Compile Include="Models\AspNetUserLogin.cs" />
     <Compile Include="Models\AuditLog.cs" />
+    <Compile Include="Models\Jobwork.cs" />
     <Compile Include="Models\JobworkParty.cs" />
     <Compile Include="Models\ListTable.cs" />
+    <Compile Include="Models\Outwards.cs" />
+    <Compile Include="Models\OutwardsDetails.cs" />
     <Compile Include="Models\PalContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

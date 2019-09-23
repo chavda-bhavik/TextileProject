@@ -46,12 +46,18 @@ namespace PalWeb.App_Start
 				 .RegisterType<IRepositoryAsync<AuditLog>, Repository<AuditLog>>(new PerRequestLifetimeManager())
 				 .RegisterType<IRepositoryAsync<tblLists>, Repository<tblLists>>(new PerRequestLifetimeManager())
                  .RegisterType<IRepositoryAsync<JobworkParty>, Repository<JobworkParty>>(new PerRequestLifetimeManager())
+                 .RegisterType<IRepositoryAsync<Jobwork>, Repository<Jobwork>>(new PerRequestLifetimeManager())
+                 .RegisterType<IRepositoryAsync<Outwards>, Repository<Outwards>>(new PerRequestLifetimeManager())
+                 .RegisterType<IRepositoryAsync<OutwardsDetails>, Repository<OutwardsDetails>>(new PerRequestLifetimeManager())
 
                  .RegisterType<IAuditLogService, AuditLogService>(new PerRequestLifetimeManager())
 				 .RegisterType<IJobworkPartyService, JobworkPartyService>(new PerRequestLifetimeManager())
-				 
-			//.RegisterType<IRegisterServices, RegisterServices>(new PerRequestLifetimeManager())
-			;
+                 .RegisterType<IJobworkService, JobworkService>(new PerRequestLifetimeManager())
+                 .RegisterType<IOutwardsService, OutwardsService>(new PerRequestLifetimeManager())
+                 .RegisterType<IOutwardsDetailsService, OutwardsDetailsService>(new PerRequestLifetimeManager())
+
+            //.RegisterType<IRegisterServices, RegisterServices>(new PerRequestLifetimeManager())
+            ;
 
 			container.RegisterType<AccountController>(
 				new InjectionConstructor());
