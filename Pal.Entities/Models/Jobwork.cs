@@ -12,6 +12,7 @@ namespace Pal.Entities.Models
     [Table("Jobwork")]
     public class Jobwork : Entity
     {
+
         [Key]
         public String VoucherNo { get; set; }
         public int JobworkType { get; set; }
